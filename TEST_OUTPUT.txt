@@ -1,0 +1,44 @@
+test_errors_do_not_leak_internals (tests.test_auth.TestGenericErrors.test_errors_do_not_leak_internals) ... ok
+test_malformed_login_bodies_get_same_generic_error (tests.test_auth.TestGenericErrors.test_malformed_login_bodies_get_same_generic_error) ... ok
+test_unknown_user_and_wrong_password_look_identical (tests.test_auth.TestGenericErrors.test_unknown_user_and_wrong_password_look_identical) ... ok
+test_hash_is_not_plaintext_and_uses_scrypt (tests.test_auth.TestPasswordHashing.test_hash_is_not_plaintext_and_uses_scrypt) ... ok
+test_malformed_hash_fails_closed (tests.test_auth.TestPasswordHashing.test_malformed_hash_fails_closed) ... ok
+test_needs_rehash_detects_weaker_parameters (tests.test_auth.TestPasswordHashing.test_needs_rehash_detects_weaker_parameters) ... ok
+test_salts_are_unique (tests.test_auth.TestPasswordHashing.test_salts_are_unique) ... ok
+test_verify_correct_and_wrong (tests.test_auth.TestPasswordHashing.test_verify_correct_and_wrong) ... ok
+test_account_locks_after_five_failures_even_with_correct_password (tests.test_auth.TestRateLimiting.test_account_locks_after_five_failures_even_with_correct_password) ... ok
+test_ip_limit_stops_password_spraying (tests.test_auth.TestRateLimiting.test_ip_limit_stops_password_spraying) ... ok
+test_lockout_applies_across_ips_for_same_account (tests.test_auth.TestRateLimiting.test_lockout_applies_across_ips_for_same_account) ... ok
+test_lockout_expires_after_window (tests.test_auth.TestRateLimiting.test_lockout_expires_after_window) ... ok
+test_successful_login_resets_account_counter (tests.test_auth.TestRateLimiting.test_successful_login_resets_account_counter) ... ok
+test_unknown_usernames_are_throttled_too (tests.test_auth.TestRateLimiting.test_unknown_usernames_are_throttled_too) ... ok
+test_username_case_cannot_bypass_lockout (tests.test_auth.TestRateLimiting.test_username_case_cannot_bypass_lockout) ... ok
+test_duplicate_username_case_insensitive (tests.test_auth.TestRegistration.test_duplicate_username_case_insensitive) ... ok
+test_non_json_and_wrong_types_rejected (tests.test_auth.TestRegistration.test_non_json_and_wrong_types_rejected) ... ok
+test_oversized_body_rejected (tests.test_auth.TestRegistration.test_oversized_body_rejected) ... ok
+test_register_rejects_weak_input_via_api (tests.test_auth.TestRegistration.test_register_rejects_weak_input_via_api) ... ok
+test_register_success_stores_only_a_hash (tests.test_auth.TestRegistration.test_register_success_stores_only_a_hash) ... ok
+test_registration_is_rate_limited_per_ip (tests.test_auth.TestRegistration.test_registration_is_rate_limited_per_ip) ... ok
+test_absolute_timeout_even_if_active (tests.test_auth.TestSessions.test_absolute_timeout_even_if_active) ... ok
+test_attacker_chosen_token_is_not_adopted (tests.test_auth.TestSessions.test_attacker_chosen_token_is_not_adopted) ... ok
+test_cookie_security_attributes (tests.test_auth.TestSessions.test_cookie_security_attributes) ... ok
+test_idle_timeout (tests.test_auth.TestSessions.test_idle_timeout) ... ok
+test_login_rotates_session_prevents_fixation (tests.test_auth.TestSessions.test_login_rotates_session_prevents_fixation) ... ok
+test_logout_invalidates_session_server_side (tests.test_auth.TestSessions.test_logout_invalidates_session_server_side) ... ok
+test_logout_without_session_is_harmless (tests.test_auth.TestSessions.test_logout_without_session_is_harmless) ... ok
+test_me_requires_valid_session (tests.test_auth.TestSessions.test_me_requires_valid_session) ... ok
+test_security_headers_present (tests.test_auth.TestSessions.test_security_headers_present) ... ok
+test_session_token_stored_hashed (tests.test_auth.TestSessions.test_session_token_stored_hashed) ... ok
+test_token_is_long_random_and_unique (tests.test_auth.TestSessions.test_token_is_long_random_and_unique) ... ok
+test_accepts_strong_password (tests.test_auth.TestValidation.test_accepts_strong_password) ... ok
+test_rejects_common_and_repetitive (tests.test_auth.TestValidation.test_rejects_common_and_repetitive) ... ok
+test_rejects_non_string_types (tests.test_auth.TestValidation.test_rejects_non_string_types) ... ok
+test_rejects_overlong_password (tests.test_auth.TestValidation.test_rejects_overlong_password) ... ok
+test_rejects_password_containing_username (tests.test_auth.TestValidation.test_rejects_password_containing_username) ... ok
+test_rejects_short_password (tests.test_auth.TestValidation.test_rejects_short_password) ... ok
+test_username_format (tests.test_auth.TestValidation.test_username_format) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 4.958s
+
+OK
